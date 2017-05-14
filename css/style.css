@@ -1,0 +1,27 @@
+.quote_container {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ericka_hart {
+    background-image: url("../img/ericka1.jpg");
+}
+
+#angela_davis {
+    background-image: url("../img/angela1.jpg");
+}
+
+#audre_lorde {
+    background-image: url("../img/audre1.jpg");
+}
+
+#cherrie_moraga {
+    background-image: url("../img/cherrie.jpg");
+}
+
+#janet_mock {
+    background-image: url("../img/janet2.jpg");
+}
