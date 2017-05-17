@@ -1,3 +1,8 @@
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 .quote_container {
     width: 100%;
     height: 400px;
@@ -24,4 +29,24 @@
 
 #janet_mock {
     background-image: url("../img/janet2.jpg");
+}
+
+#michelle_alexander {
+    background-image: url("../img/michelle2.jpg");
+}
+
+#carmen_perez {
+    background-image: url("../img/carmen1.jpeg");
+}
+
+#winona_laduke {
+    background-image: url("../img/winona1.JPG");
+}
+
+#roxane_gay {
+    background-image: url("../img/roxane3.jpg");
+}
+
+#ava_duvernay {
+    background-image: url("../img/ava4.jpg");
 }
