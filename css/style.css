@@ -267,6 +267,18 @@ h4 {
     background-image: url("../img/yuri1.jpg");
 }
 
+#alicia_garza {
+    background-image: url("../img/alicia2.jpg");
+}
+
+#al-jen_poo {
+    background-image: url("../img/al-jen4.jpg");
+}
+
+#thenmozhi_soundararajan {
+    background-image: url("../img/thenmozhi1.jpg");
+}
+
 .overlay {
     opacity: 0;
     position: fixed;
