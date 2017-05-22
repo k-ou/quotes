@@ -76,6 +76,30 @@ h4 {
     font-weight: 600;
 }
 
+section {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+section.open {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
 .profile_background {
     width: 100%;
     height: 400px;
@@ -233,7 +257,8 @@ h4 {
     background-color: rgba(255, 105, 166, 0.6);
 }
 
-.container_effects3:hover {
+.container_effects3:hover,
+.container_effects3.modal_effect {
     border: 20px white solid;
 }
 
@@ -257,12 +282,19 @@ h4 {
     margin: 0 auto;
 }
 
-.container_effects3:hover h3.name {
+.container_effects3:hover h3.name,
+.container_effects3.modal_effect h3.name {
     opacity: 1;
 }
 
-.container_effects3:hover h3.i_am {
+.container_effects3:hover h3.i_am,
+.container_effects3.modal_effect h3.i_am {
     opacity: 0;
+}
+
+.modal_effect {
+    align-items: flex-start;
+    padding-top: 50px;
 }
 
 
@@ -343,7 +375,8 @@ h4 {
     z-index: 999;
     pointer-events: none;
     cursor: default;
-    padding: 50px;
+    padding: 100px;
+    padding-top: 200px;
     transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -ms-transition: all 0.25s ease;
@@ -383,28 +416,5 @@ h4 {
 
 .quote {
     font-size: 36px;
-}
-
-section {
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
-
-section.open {
-    z-index: 100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
+    color: white;
 }
