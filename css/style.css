@@ -9,6 +9,12 @@ body {
     /*    rgb(16,162,150)*/
     --yellow: #E5A600;
     /*    rgb(229,166,0)*/
+    --orange: #FF8947;
+    /*    rgb(255,137,71)*/
+    --purple: #7354E8;
+    /*    rgb(115,84,232)*/
+    --pink: #FF69A6;
+    /*    rgb(255,105,166)*/
 }
 
 .no-gutter>[class*='col-'] {
@@ -55,12 +61,41 @@ h4 {
     right: 0;
 }
 
-.quote_container {
+.title_i_am {
+    height: 250px;
+    background-color: rgba(46, 52, 68, 0.7);
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_i_am h2 {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.profile_background {
     width: 100%;
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+.quote_expand {
+    height: 100vh;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
 }
 
 
@@ -69,7 +104,7 @@ h4 {
 
 /* NUMBER 1 */
 
-.quote_container,
+.profile_background,
 .container_effects1,
 .container_effects1 h3 {
     transition: all 0.25s ease;
@@ -110,53 +145,9 @@ h4 {
 }
 
 
-/* NUMBER 2 */
-
-.quote_container,
-.container_effects2,
-.container_effects2 h3 {
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-}
-
-.container_effects2 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(16, 162, 150, 1.0);
-    border: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-}
-
-.container_effects2:hover {
-    background-color: rgba(16, 162, 150, 0.6);
-    border: 20px white solid;
-}
-
-.container_effects2 h3 {
-    opacity: 0;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-
-.container_effects2:hover h3 {
-    opacity: 1;
-}
-
-
 /* NUMBER 3 */
 
-.quote_container,
+.profile_background,
 .container_effects3,
 .container_effects3 h3 {
     transition: all 0.25s ease;
@@ -179,8 +170,70 @@ h4 {
     top: 0;
 }
 
-.container_effects3:hover {
+.grid_view_yellow .container_effects3 {
+    background-color: rgba(229, 166, 0, 1.0);
+}
+
+.grid_view_yellow .container_effects3:hover,
+.grid_view_yellow .modal_effect {
     background-color: rgba(229, 166, 0, 0.6);
+}
+
+.grid_view_green .container_effects3 {
+    background-color: rgba(114, 204, 167, 1.0);
+}
+
+.grid_view_green .container_effects3:hover,
+.grid_view_green .modal_effect {
+    background-color: rgba(114, 204, 167, 0.6);
+}
+
+.grid_view_red .container_effects3 {
+    background-color: rgba(255, 42, 72, 1.0);
+}
+
+.grid_view_red .container_effects3:hover,
+.grid_view_red .modal_effect {
+    background-color: rgba(255, 42, 72, 0.6);
+}
+
+.grid_view_orange .container_effects3 {
+    background-color: rgba(255, 137, 71, 1.0);
+}
+
+.grid_view_orange .container_effects3:hover,
+.grid_view_orange .modal_effect {
+    background-color: rgba(255, 137, 71, 0.6);
+}
+
+.grid_view_teal .container_effects3 {
+    background-color: rgba(16, 162, 150, 1.0);
+}
+
+.grid_view_teal .container_effects3:hover,
+.grid_view_teal .modal_effect {
+    background-color: rgba(16, 162, 150, 0.6);
+}
+
+.grid_view_purple .container_effects3 {
+    background-color: rgba(115, 84, 232, 1.0);
+}
+
+.grid_view_purple .container_effects3:hover,
+.grid_view_purple .modal_effect {
+    background-color: rgba(115, 84, 232, 0.6);
+}
+
+.grid_view_pink .container_effects3 {
+    background-color: rgba(255, 105, 166, 1.0);
+}
+
+.grid_view_pink .container_effects3:hover,
+.grid_view_pink .modal_effect {
+    background-color: rgba(255, 105, 166, 0.6);
+}
+
+.container_effects3:hover {
     border: 20px white solid;
 }
 
@@ -287,9 +340,15 @@ h4 {
     width: 100%;
     height: 100%;
     transition: all 0.4s ease;
-    z-index: 101;
+    z-index: 999;
     pointer-events: none;
     cursor: default;
+    padding: 50px;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
 }
 
 .close {
@@ -322,6 +381,20 @@ h4 {
     height: 100%;
 }
 
+.quote {
+    font-size: 36px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
 section.open {
     z-index: 100;
     position: fixed;
@@ -329,4 +402,9 @@ section.open {
     height: 100vh;
     top: 0;
     left: 0;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
