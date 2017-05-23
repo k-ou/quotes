@@ -1,0 +1,185 @@
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    .quote {
+        font-size: 20px;
+        color: white;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .bio {
+        font-size: 18px;
+        color: white;
+    }
+    .i_am {
+        font-weight: 400;
+    }
+    #quote1 {
+        font-family: 'Cabin Sketch', sans-serif;
+    }
+    .grid1 .i_am,
+    .grid1 .name,
+    #quote1 span {
+        font-family: 'Holtwood One SC', sans-serif;
+    }
+    #quote2 {
+        font-family: 'Baloo Bhaina', sans-serif;
+    }
+    .grid2 .i_am,
+    .grid2 .name,
+    #quote2 span {
+        font-family: 'Suez One', sans-serif;
+    }
+    #quote3 {
+        font-family: 'Special Elite', sans-serif;
+    }
+    .grid3 .i_am,
+    .grid3 .name,
+    #quote3 span {
+        font-family: 'Sigmar One', sans-serif;
+    }
+    #quote4 {
+        font-family: 'Economica', sans-serif;
+    }
+    .grid4 .i_am,
+    .grid4 .name,
+    #quote4 span {
+        font-family: 'Cutive Mono', sans-serif;
+    }
+    #quote5 {
+        font-family: 'Raleway Dots', sans-serif;
+    }
+    .grid5 .i_am,
+    .grid5 .name,
+    #quote5 span {
+        font-family: 'Glegoo', sans-serif;
+    }
+    #quote6 {
+        font-family: 'Comfortaa', sans-serif;
+    }
+    .grid6 .i_am,
+    .grid6 .name,
+    #quote6 span {
+        font-family: 'Barrio', sans-serif;
+    }
+    #quote7 {
+        font-family: 'Prata', sans-serif;
+    }
+    #quote7 span {
+        font-size: 64px;
+        text-align: center;
+        line-height: 200px;
+    }
+    .grid7 .i_am,
+    .grid7 .name,
+    #quote7 span {
+        font-family: 'Permanent Marker', sans-serif;
+    }
+    #quote8 {
+        font-family: 'Questrial', sans-serif;
+    }
+    .grid8 .i_am,
+    .grid8 .name,
+    #quote8 span {
+        font-family: 'Fascinate Inline', sans-serif;
+    }
+    #quote8 span:first-child {
+        letter-spacing: 5px;
+    }
+    #quote8 span:nth-child(2) {
+        letter-spacing: 10px;
+    }
+    #quote8 span:nth-child(3) {
+        letter-spacing: 15px;
+    }
+    #quote8 span:nth-child(4) {
+        letter-spacing: 30px;
+    }
+    #quote9 {
+        font-family: 'Fjalla One', sans-serif;
+    }
+    .grid9 .i_am,
+    .grid9 .name,
+    #quote9 span {
+        font-family: 'Monoton', sans-serif;
+    }
+    #quote10 {
+        font-family: 'IM Fell DW Pica SC', sans-serif;
+    }
+    .grid10 .i_am,
+    .grid10 .name,
+    #quote10 span {
+        font-family: 'Bahiana', sans-serif;
+    }
+    #quote11 {
+        font-family: 'Quattrocento Sans', sans-serif;
+    }
+    .grid11 .i_am,
+    .grid11 .name,
+    #quote11 span {
+        font-family: 'Fredericka the Great', sans-serif;
+    }
+    #quote12 {
+        font-family: 'Abel', sans-serif;
+    }
+    .grid12 .i_am,
+    .grid12 .name {
+        font-family: 'Kumar One Outline', sans-serif;
+    }
+    #quote12 span {
+        font-family: 'Kumar One', sans-serif;
+    }
+    #quote13 {
+        font-family: 'Knewave', sans-serif;
+    }
+    .grid13 .i_am,
+    .grid13 .name,
+    #quote13 span {
+        font-family: 'Racing Sans One', sans-serif;
+    }
+    #quote14 {
+        font-family: 'Mate SC', sans-serif;
+    }
+    .grid14 .i_am,
+    .grid14 .name,
+    #quote14 span {
+        font-family: 'Gruppo', sans-serif;
+    }
+    #quote15 {
+        font-family: 'Titan One', sans-serif;
+    }
+    .grid15 .i_am,
+    .grid15 .name,
+    #quote15 span {
+        font-family: 'Megrim', sans-serif;
+    }
+    #quote16 {
+        font-family: 'Overlock SC', sans-serif;
+    }
+    .grid16 .i_am,
+    .grid16 .name,
+    #quote16 span {
+        font-family: 'Oleo Script', sans-serif;
+    }
+}
+
+
+/* Tablet screens */
+
+@media only screen and (min-width: 992px) {
+    .quote {
+        font-size: 28px;
+    }
+}
+
+
+/* Desktop screens */
+
+@media only screen and (min-width: 1224px) {
+    .quote {
+        font-size: 42px;
+    }
+}
