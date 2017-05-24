@@ -9,9 +9,12 @@ $(document).keyup(e => {
     const right = 39;
     switch (e.keyCode) {
         case left:
-            // TODO
         case right:
-            // TODO
+            const func = e.keyCode === left ? 'prev' : 'next';
+            const nextSection = $('.open').parent()[func]().children();
+            closeModal.bind($('.open'))()
+            openModal.bind(nextSection)();
+            break;
         case esc:
             closeModal(e);
             break;
@@ -35,7 +38,7 @@ function openModal() {
 }
 
 function closeModal(e) {
-    e.stopPropagation();
+    e && e.stopPropagation();
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');
