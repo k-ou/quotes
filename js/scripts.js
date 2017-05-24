@@ -1,24 +1,20 @@
 $(document).ready(() => {
-    // open modal
-    var section = $('section');
-    var isOpen = section.hasClass('open');
-    if (!isOpen) {
-        section.on('click', openModal);
-        debugger;
-    }
+    $('section').on('click', openModal);
     $('.close').on('click', closeModal);
 });
 
 $(document).keyup(e => {
-    const ESC = 27;
+    const esc = 27;
     const left = 37;
     const right = 39;
-    if (e.keyCode === ESC) {
-        closeModal();
-    } else if (e.keyCode === left) {
-        closeModal();
-    } else if (e.keyCode === right) {
-        closeModal();
+    switch (e.keyCode) {
+        case left:
+            // TODO
+        case right:
+            // TODO
+        case esc:
+            closeModal(e);
+            break;
     }
 });
 
@@ -38,8 +34,8 @@ function openModal() {
     styleModal();
 }
 
-function closeModal() {
-    debugger;
+function closeModal(e) {
+    e.stopPropagation();
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');
