@@ -10,21 +10,36 @@ $(document).keyup(e => {
     switch (e.keyCode) {
         case left:
         case right:
-            const func = e.keyCode === left ? 'prev' : 'next';
-            const nextSection = $('.open').parent()[func]().children();
-            closeModal.bind($('.open'))();
-            //            if (nextSection === null) {
-            //                closeModal(e);
-            //                console.log("hello");
-            //                break;
-            //            }
-            openModal.bind(nextSection)();
+            const direction = e.keyCode === left ? 'prev' : 'next';
+            updateSection(direction);
             break;
         case esc:
             closeModal(e);
             break;
     }
 });
+
+$(window).bind('mousewheel', (event, delta) => {
+    const name = $('.open .name');
+    if (name && name.is('h3')) {
+        const nameBottom = name.offset().top + name.height();
+        const quoteTop = $('.open .quote').offset().top;
+        if (quoteTop < nameBottom) {
+            name.addClass('overlappingName');
+        } else {
+            name.removeClass('overlappingName');
+        }
+    }
+    
+});
+
+function updateSection(direction) {
+    const nextSection = $('.open').parent()[direction]().children();
+    closeModal.bind($('.open'))()
+    if (nextSection.is('section')) {
+        openModal.bind(nextSection)();
+    }
+}
 
 function styleModal() {
     $('.open').find('.container_effects3').addClass('modal_effect');
@@ -45,6 +60,8 @@ function openModal() {
 function closeModal(e) {
     $('body').css('overflow', 'visible');
     e && e.stopPropagation();
+    const name = $('.open .name');
+    name.removeClass('overlappingName')
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');
