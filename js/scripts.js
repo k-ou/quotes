@@ -12,7 +12,12 @@ $(document).keyup(e => {
         case right:
             const func = e.keyCode === left ? 'prev' : 'next';
             const nextSection = $('.open').parent()[func]().children();
-            closeModal.bind($('.open'))()
+            closeModal.bind($('.open'))();
+            //            if (nextSection === null) {
+            //                closeModal(e);
+            //                console.log("hello");
+            //                break;
+            //            }
             openModal.bind(nextSection)();
             break;
         case esc:
@@ -38,10 +43,10 @@ function openModal() {
 }
 
 function closeModal(e) {
+    $('body').css('overflow', 'visible');
     e && e.stopPropagation();
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');
     $('.open').removeClass('open');
-    $('body').css('overflow', 'visible');
 }
