@@ -138,90 +138,55 @@
         position: absolute;
         top: 0;
     }
+    /*    YELLOW */
     .grid_view_yellow .container_effects3 {
         background-color: rgba(229, 166, 0, 1.0);
     }
     .bio_yellow {
         color: rgba(229, 166, 0, 1.0);
     }
-    /*
-.grid_view_yellow .container_effects3:hover,
-.grid_view_yellow .modal_effect {
-    background-color: rgba(229, 166, 0, 0.8);
-}
-*/
+    /*    GREEN */
     .grid_view_green .container_effects3 {
         background-color: rgba(114, 204, 167, 1.0);
     }
     .bio_green {
         color: rgba(114, 204, 167, 1.0);
     }
-    /*
-.grid_view_green .container_effects3:hover,
-.grid_view_green .modal_effect {
-    background-color: rgba(114, 204, 167, 0.8);
-}
-*/
+    /*    RED */
     .grid_view_red .container_effects3 {
         background-color: rgba(255, 42, 72, 1.0);
     }
     .bio_red {
         color: rgba(255, 42, 72, 1.0);
     }
-    /*
-.grid_view_red .container_effects3:hover,
-.grid_view_red .modal_effect {
-    background-color: rgba(255, 42, 72, 0.8);
-}
-*/
+    /*    ORANGE */
     .grid_view_orange .container_effects3 {
         background-color: rgba(255, 137, 71, 1.0);
     }
     .bio_orange {
         color: rgba(255, 137, 71, 1.0);
     }
-    /*
-.grid_view_orange .container_effects3:hover,
-.grid_view_orange .modal_effect {
-    background-color: rgba(255, 137, 71, 0.8);
-}
-*/
+    /*    TEAL */
     .grid_view_teal .container_effects3 {
         background-color: rgba(16, 162, 150, 1.0);
     }
     .bio_teal {
         color: rgba(16, 162, 150, 1.0);
     }
-    /*
-.grid_view_teal .container_effects3:hover,
-.grid_view_teal .modal_effect {
-    background-color: rgba(16, 162, 150, 0.8);
-}
-*/
+    /*    PURPLE */
     .grid_view_purple .container_effects3 {
         background-color: rgba(115, 84, 232, 1.0);
     }
     .bio_purple {
         color: rgba(115, 84, 232, 1.0);
     }
-    /*
-.grid_view_purple .container_effects3:hover,
-.grid_view_purple .modal_effect {
-    background-color: rgba(115, 84, 232, 0.8);
-}
-*/
+    /*    PINK */
     .grid_view_pink .container_effects3 {
         background-color: rgba(255, 105, 166, 1.0);
     }
     .bio_pink {
         color: rgba(255, 105, 166, 1.0);
     }
-    /*
-.grid_view_pink .container_effects3:hover,
-.grid_view_pink .modal_effect {
-    background-color: rgba(255, 105, 166, 0.8);
-}
-*/
     .container_effects3:hover,
     .container_effects3.modal_effect {
         border: 8px white solid;
@@ -332,13 +297,56 @@
     .quote {
         padding-bottom: 50px;
     }
+    /*    BIO */
     .bio {
         font-family: 'Raleway', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
         padding: 20px;
-        margin-bottom: 30px;
         background-color: white;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section {
+        color: white;
+    }
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote {
+        position: relative;
+        width: 100%;
+    }
+    .additional_quote:after {
+        content: "";
+        display: block;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 50%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 65%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 80%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 95%;
+    }
+    .additional_quote_center {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .additional_quote p {
+        font-size: 16px;
+    }
+    /*    adds space to bottom of modal */
+    .profile div:last-child {
+        margin-bottom: 30px;
     }
     .container_effects3 h3.overlappingName {
         color: rgba(255, 255, 255, 0.5);
@@ -346,7 +354,7 @@
 }
 
 
-/* Tablet screens */
+/* Tablet screens (small) */
 
 @media only screen and (min-width: 768px) {
     /*    "I AM" */
@@ -372,7 +380,7 @@
     }
     .container_effects3 h3.i_am,
     .container_effects3 h3.name {
-        font-size: 48px;
+        font-size: 35px;
     }
     .container_effects3:hover,
     .container_effects3.modal_effect {
@@ -381,9 +389,75 @@
     .quote {
         padding-bottom: 90px;
     }
+    /*    BIO */
     .bio {
         font-size: 18px;
         padding: 30px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 100%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 170%;
+    }
+    .additional_quote_center {
+        padding: 30px;
+    }
+    .additional_quote p {
+        font-size: 18px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
+        margin-bottom: 100px;
+    }
+}
+
+
+/* Tablet screens (large) */
+
+@media only screen and (min-width: 1024px) {
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        font-size: 40px;
+    }
+    /*    exception for Thenmozhi Soundararajan */
+    .grid15 .container_effects3 h3.name {
+        font-size: 30px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quote_xs:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 175%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 200%;
+    }
+    .additional_quote_center {
+        padding: 30px;
+    }
+    .additional_quote p {
+        font-size: 18px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
         margin-bottom: 100px;
     }
 }
@@ -411,8 +485,34 @@
     .container_effects3.modal_effect {
         border: 20px white solid;
     }
+    /*    BIO */
     .bio {
         padding: 40px;
-        margin-bottom: 150px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 75%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 100%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_center {
+        padding: 40px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
+        margin-bottom: 100px;
     }
 }
