@@ -11,6 +11,7 @@ $(document).keyup(e => {
         case left:
         case right:
             const direction = e.keyCode === left ? 'prev' : 'next';
+            updateSection(direction);
             break;
         case esc:
             closeModal(e);
