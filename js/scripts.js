@@ -10,16 +10,21 @@ $(document).keyup(e => {
     switch (e.keyCode) {
         case left:
         case right:
-            const func = e.keyCode === left ? 'prev' : 'next';
-            const nextSection = $('.open').parent()[func]().children();
-            closeModal.bind($('.open'))()
-            openModal.bind(nextSection)();
+            const direction = e.keyCode === left ? 'prev' : 'next';
             break;
         case esc:
             closeModal(e);
             break;
     }
 });
+
+function updateSection(direction) {
+    const nextSection = $('.open').parent()[direction]().children();
+    closeModal.bind($('.open'))()
+    if (nextSection.is('section')) {
+        openModal.bind(nextSection)();
+    }
+}
 
 function styleModal() {
     $('.open').find('.container_effects3').addClass('modal_effect');
