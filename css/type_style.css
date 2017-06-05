@@ -226,22 +226,20 @@
     .container_effects3.modal_effect {
         border: 8px white solid;
     }
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+    }
     .container_effects3 h3.i_am {
         opacity: 1;
-        color: white;
-        text-align: center;
-        font-weight: 700;
-        font-size: 48px;
-        text-transform: uppercase;
     }
     .container_effects3 h3.name {
         position: absolute;
         opacity: 0;
-        color: white;
-        text-align: center;
-        font-weight: 700;
-        font-size: 48px;
-        text-transform: uppercase;
         margin: 0 auto;
     }
     .container_effects3:hover h3.name,
@@ -357,6 +355,10 @@
     .overlay {
         padding: 80px;
         padding-top: 200px;
+    }
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        font-size: 48px;
     }
     .container_effects3:hover,
     .container_effects3.modal_effect {
