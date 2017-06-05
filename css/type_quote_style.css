@@ -10,36 +10,40 @@
         -webkit-transition: all 0.25s ease;
         -o-transition: all 0.25s ease;
     }
-    .bio {
-        font-size: 18px;
-        color: white;
-    }
     .i_am {
         font-weight: 400;
     }
     #quote1 {
-        font-family: 'Cabin Sketch', sans-serif;
+        font-family: 'Cutive Mono', sans-serif;
+        font-size: 36px;
     }
     .grid1 .i_am,
     .grid1 .name,
     #quote1 span {
         font-family: 'Holtwood One SC', sans-serif;
+        font-size: 40px;
+        line-height: 38px;
     }
     #quote2 {
-        font-family: 'Baloo Bhaina', sans-serif;
+        font-family: 'Special Elite', sans-serif;
     }
     .grid2 .i_am,
     .grid2 .name,
     #quote2 span {
-        font-family: 'Suez One', sans-serif;
+        /*        font-family: 'Suez One', sans-serif;*/
     }
     #quote3 {
-        font-family: 'Special Elite', sans-serif;
+        font-family: 'Baloo Bhaina', sans-serif;
+        font-size: 28px;
     }
     .grid3 .i_am,
     .grid3 .name,
     #quote3 span {
         font-family: 'Sigmar One', sans-serif;
+    }
+    #quote3 span {
+        font-size: 104px;
+        line-height: 74px;
     }
     #quote4 {
         font-family: 'Economica', sans-serif;
@@ -47,10 +51,10 @@
     .grid4 .i_am,
     .grid4 .name,
     #quote4 span {
-        font-family: 'Cutive Mono', sans-serif;
+        font-family: 'Fascinate Inline', sans-serif;
     }
     #quote5 {
-        font-family: 'Raleway Dots', sans-serif;
+        font-family: 'Cutive Mono', sans-serif;
     }
     .grid5 .i_am,
     .grid5 .name,
@@ -68,11 +72,15 @@
     }
     #quote7 {
         font-family: 'Prata', sans-serif;
+        font-size: 30px;
+    }
+    #quote7 span:not(.quote) {
+        line-height: 140px;
     }
     #quote7 span {
         font-size: 64px;
         text-align: center;
-        line-height: 200px;
+        line-height: 20px;
     }
     .grid7 .i_am,
     .grid7 .name,
@@ -85,18 +93,18 @@
     .grid8 .i_am,
     .grid8 .name,
     #quote8 span {
-        font-family: 'Fascinate Inline', sans-serif;
-    }
-    #quote8 span:first-child {
-        letter-spacing: 5px;
+        font-family: 'Raleway Dots', sans-serif;
     }
     #quote8 span:nth-child(2) {
-        letter-spacing: 10px;
+        letter-spacing: 5px;
     }
     #quote8 span:nth-child(3) {
-        letter-spacing: 15px;
+        letter-spacing: 10px;
     }
     #quote8 span:nth-child(4) {
+        letter-spacing: 15px;
+    }
+    #quote8 span:nth-child(5) {
         letter-spacing: 30px;
     }
     #quote9 {
@@ -108,20 +116,23 @@
         font-family: 'Monoton', sans-serif;
     }
     #quote10 {
-        font-family: 'IM Fell DW Pica SC', sans-serif;
+        font-family: 'IM Fell DW Pica', sans-serif;
     }
     .grid10 .i_am,
     .grid10 .name,
     #quote10 span {
         font-family: 'Bahiana', sans-serif;
     }
+    #quote10 span {
+        font-size: 60px;
+    }
     #quote11 {
-        font-family: 'Quattrocento Sans', sans-serif;
+        font-family: 'Crimson Text', sans-serif;
     }
     .grid11 .i_am,
     .grid11 .name,
     #quote11 span {
-        font-family: 'Fredericka the Great', sans-serif;
+        font-family: 'IM Fell DW Pica', sans-serif;
     }
     #quote12 {
         font-family: 'Abel', sans-serif;
@@ -134,36 +145,43 @@
         font-family: 'Kumar One', sans-serif;
     }
     #quote13 {
-        font-family: 'Knewave', sans-serif;
+        font-family: 'Viga', sans-serif;
     }
     .grid13 .i_am,
     .grid13 .name,
     #quote13 span {
         font-family: 'Racing Sans One', sans-serif;
     }
+    #quote13 span {
+        font-size: 92px;
+        margin-left: 60px;
+    }
     #quote14 {
-        font-family: 'Mate SC', sans-serif;
+        font-family: 'Gruppo', sans-serif;
     }
     .grid14 .i_am,
     .grid14 .name,
     #quote14 span {
-        font-family: 'Gruppo', sans-serif;
+        font-family: 'Chango', sans-serif;
     }
     #quote15 {
-        font-family: 'Titan One', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-size: 30px;
+        line-height: 48px;
     }
     .grid15 .i_am,
     .grid15 .name,
     #quote15 span {
-        font-family: 'Megrim', sans-serif;
+        font-family: 'Titan One', sans-serif;
+        font-size: 40px;
     }
     #quote16 {
-        font-family: 'Overlock SC', sans-serif;
+        font-family: 'Varela Round', sans-serif;
     }
     .grid16 .i_am,
     .grid16 .name,
     #quote16 span {
-        font-family: 'Oleo Script', sans-serif;
+        font-family: 'Knewave', sans-serif;
     }
 }
 

@@ -356,7 +356,7 @@ section.open {
     background-image: url("../img/alicia2.jpg");
 }
 
-#al-jen_poo {
+#ai-jen_poo {
     background-image: url("../img/al-jen4.jpg");
 }
 
@@ -390,13 +390,14 @@ section.open {
 
 .close {
     position: absolute;
-    top: 0.4em;
-    right: 0.4em;
+    top: 1.5em;
+    right: 1.5em;
     width: 2em;
     height: 2em;
     text-indent: -9000px;
     cursor: pointer;
     z-index: 1000;
+    color: white;
     opacity: 1;
 }
 
