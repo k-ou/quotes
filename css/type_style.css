@@ -34,6 +34,7 @@
     h4 {
         font-family: 'Raleway', sans-serif;
     }
+    /*    HEADER */
     .title {
         background-color: var(--blue);
         height: 100vh;
@@ -45,7 +46,7 @@
         text-align: center;
     }
     .title h1 {
-        font-size: 10vw;
+        font-size: 12vw;
         font-family: 'Raleway', sans-serif;
         font-weight: 900;
         color: white;
@@ -61,6 +62,7 @@
         left: 0;
         right: 0;
     }
+    /*    "I AM" */
     .title_i_am {
         height: 250px;
         background-color: rgba(46, 52, 68, 0.7);
@@ -71,9 +73,10 @@
         align-items: center;
     }
     .title_i_am h2 {
-        font-size: 100px;
+        font-size: 20vw;
         font-weight: 600;
     }
+    /*    GRIDS */
     section {
         width: 100%;
         height: 100%;
@@ -221,7 +224,7 @@
 */
     .container_effects3:hover,
     .container_effects3.modal_effect {
-        border: 10px white solid;
+        border: 8px white solid;
     }
     .container_effects3 h3.i_am {
         opacity: 1;
@@ -274,7 +277,7 @@
         z-index: 999;
         /*    pointer-events: none;*/
         cursor: default;
-        padding: 40px;
+        padding: 25px;
         padding-top: 200px;
         transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
@@ -328,14 +331,14 @@
         -o-transition: all 0.25s ease;
     }
     .quote {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
     .bio {
         font-family: 'Raleway', sans-serif;
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
-        padding: 40px;
-        margin-bottom: 200px;
+        padding: 20px;
+        margin-bottom: 30px;
         background-color: white;
     }
     .overlappingName {
@@ -346,14 +349,26 @@
 
 /* Tablet screens */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+    /*    "I AM" */
+    .title_i_am h2 {
+        font-size: 10vw;
+    }
     .overlay {
-        padding: 100px;
+        padding: 80px;
         padding-top: 200px;
     }
     .container_effects3:hover,
     .container_effects3.modal_effect {
         border: 20px white solid;
+    }
+    .quote {
+        padding-bottom: 100px;
+    }
+    .bio {
+        font-size: 18px;
+        padding: 30px;
+        margin-bottom: 100px;
     }
 }
 
@@ -361,6 +376,17 @@
 /* Desktop screens */
 
 @media only screen and (min-width: 1224px) {
+    /*    HEADER */
+    .title h1 {
+        font-size: 10vw;
+    }
+    .title h2 {
+        font-size: 15vw;
+    }
+    /*    "I AM" */
+    .title_i_am h2 {
+        font-size: 100px;
+    }
     .overlay {
         padding: 150px;
         padding-top: 200px;
@@ -368,5 +394,9 @@
     .container_effects3:hover,
     .container_effects3.modal_effect {
         border: 20px white solid;
+    }
+    .bio {
+        padding: 40px;
+        margin-bottom: 150px;
     }
 }

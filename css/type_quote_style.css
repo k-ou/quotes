@@ -13,17 +13,21 @@
     .i_am {
         font-weight: 400;
     }
+    /*    ERICKA HART */
     #quote1 {
         font-family: 'Cutive Mono', sans-serif;
-        font-size: 36px;
+        font-size: 6vw;
     }
     .grid1 .i_am,
     .grid1 .name,
     #quote1 span {
         font-family: 'Holtwood One SC', sans-serif;
-        font-size: 40px;
-        line-height: 38px;
     }
+    #quote1 span {
+        font-size: 8vw;
+        line-height: 28px;
+    }
+    /*    ANGELA DAVIS */
     #quote2 {
         font-family: 'Special Elite', sans-serif;
     }
@@ -32,9 +36,10 @@
     #quote2 span {
         /*        font-family: 'Suez One', sans-serif;*/
     }
+    /*    AUDRE LORDE */
     #quote3 {
         font-family: 'Baloo Bhaina', sans-serif;
-        font-size: 28px;
+        font-size: 5.5vw;
     }
     .grid3 .i_am,
     .grid3 .name,
@@ -42,19 +47,23 @@
         font-family: 'Sigmar One', sans-serif;
     }
     #quote3 span {
-        font-size: 104px;
-        line-height: 74px;
+        font-size: 9vw;
+        line-height: 54px;
     }
+    /*    CHERRIE MORAGA */
     #quote4 {
         font-family: 'Economica', sans-serif;
+        font-size: 9.5vw;
     }
     .grid4 .i_am,
     .grid4 .name,
     #quote4 span {
         font-family: 'Fascinate Inline', sans-serif;
     }
+    /*    MICHELLE ALEXANDER */
     #quote5 {
         font-family: 'Glegoo', sans-serif;
+        font-size: 5vw;
     }
     .grid5 .i_am,
     .grid5 .name,
@@ -62,37 +71,42 @@
         font-family: 'Lalezar', sans-serif;
     }
     #quote5 span {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 10vw;
+        line-height: 40px;
     }
+    /*    CARMEN PEREZ */
     #quote6 {
-        /*        font-family: 'Comfortaa', sans-serif;*/
         font-family: 'Economica', sans-serif;
+        font-size: 7vw;
     }
     .grid6 .i_am,
     .grid6 .name,
     #quote6 span {
         font-family: 'Barrio', sans-serif;
     }
+    /*    WINONA LADUKE */
     #quote7 {
         font-family: 'Prata', sans-serif;
-        font-size: 30px;
+        font-size: 5vw;
     }
-    #quote7 span:not(.quote) {
-        line-height: 140px;
-    }
-    #quote7 span {
-        font-size: 64px;
+    #quote7 span.quotation {
+        font-size: 48px;
         text-align: center;
         line-height: 20px;
+    }
+    #quote7 span:not(.quotation) {
+        font-size: 12vw;
+        line-height: 30px;
     }
     .grid7 .i_am,
     .grid7 .name,
     #quote7 span {
         font-family: 'Kameron', sans-serif;
     }
+    /*    ROXANE GAY */
     #quote8 {
         font-family: 'Questrial', sans-serif;
+        font-size: 5.5vw;
     }
     .grid8 .i_am,
     .grid8 .name,
@@ -111,8 +125,10 @@
     #quote8 span:nth-child(5) {
         letter-spacing: 30px;
     }
+    /*    AVA DUVERNAY */
     #quote9 {
         font-family: 'Fjalla One', sans-serif;
+        font-size: 5.5vw;
     }
     .grid9 .i_am,
     .grid9 .name,
@@ -120,14 +136,16 @@
         font-family: 'Shrikhand', sans-serif;
     }
     #quote9 span {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: 11vw;
+        line-height: 44px;
     }
     #quote9 span.quotation {
         line-height: 40px;
     }
+    /*    GRACE LEE BOGGS */
     #quote10 {
         font-family: 'Montserrat', sans-serif;
+        font-size: 5.5vw;
     }
     .grid10 .i_am,
     .grid10 .name,
@@ -135,12 +153,14 @@
         font-family: 'Bahiana', sans-serif;
     }
     #quote10 span {
-        font-size: 60px;
+        font-size: 10vw;
+        line-height: 44px;
     }
+    /*    DOLORES HUERTA */
     #quote11 {
         font-family: 'Cormorant Garamond', sans-serif;
         font-weight: 300;
-        /*        font-size: 30px;*/
+        font-size: 5.5vw;
     }
     .grid11 .i_am,
     .grid11 .name,
@@ -148,10 +168,12 @@
         font-family: 'IM Fell DW Pica', sans-serif;
     }
     #quote11 span {
-        font-size: 45px;
+        font-size: 6vw;
     }
+    /*    YURI KOCHIYAMA */
     #quote12 {
         font-family: 'Abel', sans-serif;
+        font-size: 5.5vw;
     }
     .grid12 .i_am,
     .grid12 .name {
@@ -160,8 +182,10 @@
     #quote12 span {
         font-family: 'Kumar One', sans-serif;
     }
+    /*    ALICIA GARZA */
     #quote13 {
         font-family: 'Viga', sans-serif;
+        font-size: 4.7vw;
     }
     .grid13 .i_am,
     .grid13 .name,
@@ -169,30 +193,38 @@
         font-family: 'Racing Sans One', sans-serif;
     }
     #quote13 span {
-        font-size: 92px;
-        margin-left: 60px;
+        font-size: 12vw;
+        margin-left: 0px;
+        line-height: 32px;
     }
+    /*    AI-JEN POO */
     #quote14 {
         font-family: 'Gruppo', sans-serif;
+        font-size: 5.5vw;
     }
     .grid14 .i_am,
     .grid14 .name,
     #quote14 span {
         font-family: 'Chango', sans-serif;
     }
+    /*    THENMOZHI SOUNDARARAJAN */
     #quote15 {
         font-family: 'Rubik', sans-serif;
-        font-size: 30px;
-        line-height: 48px;
+        font-size: 5vw;
+        line-height: 28px;
     }
     .grid15 .i_am,
     .grid15 .name,
     #quote15 span {
         font-family: 'Titan One', sans-serif;
-        font-size: 40px;
     }
+    #quote15 span {
+        font-size: 8vw;
+    }
+    /*    PRAMILA JAYAPAL */
     #quote16 {
         font-family: 'Varela Round', sans-serif;
+        font-size: 5vw;
     }
     .grid16 .i_am,
     .grid16 .name,
@@ -204,9 +236,114 @@
 
 /* Tablet screens */
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
     .quote {
         font-size: 28px;
+    }
+    /*    ERICKA HART */
+    #quote1 {
+        font-size: 3.5vw;
+    }
+    #quote1 span {
+        font-size: 5.5vw;
+    }
+    #quote1 span {
+        line-height: 38px;
+    }
+    /*    AUDRE LORDE */
+    #quote3 {
+        font-size: 3vw;
+    }
+    #quote3 span {
+        font-size: 7vw;
+    }
+    /*    CHERRIE MORAGA */
+    #quote4 {
+        font-size: 5vw;
+    }
+    /*    MICHELLE ALEXANDER */
+    #quote5 {
+        font-size: 4vw;
+    }
+    #quote5 span {
+        font-size: 7vw;
+        line-height: 50px;
+    }
+    /*    CARMEN PEREZ */
+    #quote6 {
+        font-size: 4.5vw;
+    }
+    /*    WINONA LADUKE */
+    #quote7 {
+        font-size: 3vw;
+    }
+    #quote7 span {
+        line-height: 20px;
+    }
+    #quote7 span:not(.quotation) {
+        font-size: 7vw;
+        line-height: 100px;
+    }
+    /*    ROXANE GAY */
+    #quote8 {
+        font-size: 4vw;
+    }
+    /*    AVA DUVERNAY */
+    #quote9 {
+        font-size: 4vw;
+    }
+    #quote9 span {
+        font-size: 8vw;
+        line-height: 60px;
+    }
+    #quote9 span.quotation {
+        line-height: 40px;
+    }
+    /*    GRACE LEE BOGGS */
+    #quote10 {
+        font-size: 3.5vw;
+    }
+    #quote10 span {
+        font-size: 6vw;
+    }
+    /*    DOLORES HUERTA */
+    #quote11 {
+        font-size: 3.5vw;
+    }
+    #quote11 span {
+        font-size: 4.5vw;
+    }
+    /*    YURI KOCHIYAMA */
+    #quote12 {
+        font-size: 3.5vw;
+    }
+    /*    ALICIA GARZA */
+    #quote13 {
+        font-size: 3.5vw;
+    }
+    #quote13 span {
+        font-size: 9vw;
+        line-height: 70px;
+    }
+    /*    AI-JEN POO */
+    #quote14 {
+        font-size: 4vw;
+    }
+    /*    THENMOZHI SOUNDARARAJAN */
+    #quote15 {
+        font-size: 3vw;
+        line-height: 36px;
+    }
+    #quote15 span {
+        font-size: 5vw;
+    }
+    /*    PRAMILA JAYAPAL */
+    #quote16 {
+        font-size: 3vw;
+    }
+    #quote16 span {
+        font-size: 4.5vw;
+        line-height: 30px;
     }
 }
 
@@ -216,5 +353,124 @@
 @media only screen and (min-width: 1224px) {
     .quote {
         font-size: 42px;
+    }
+    /*    ERICKA HART */
+    #quote1 {
+        font-size: 36px;
+    }
+    #quote1 span {
+        font-size: 40px;
+    }
+    #quote1 span {
+        line-height: 38px;
+    }
+    /*    AUDRE LORDE */
+    #quote3 {
+        font-size: 28px;
+    }
+    #quote3 span {
+        font-size: 104px;
+        line-height: 74px;
+    }
+    /*    CHERRIE MORAGA */
+    #quote4 {
+        font-size: 40px;
+    }
+    /*    MICHELLE ALEXANDER */
+    #quote5 {
+        font-size: 40px;
+    }
+    #quote5 span {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    /*    CARMEN PEREZ */
+    #quote6 {
+        font-size: 40px;
+    }
+    /*    WINONA LADUKE */
+    #quote7 {
+        font-size: 30px;
+    }
+    #quote7 span:not(.quotation) {
+        line-height: 140px;
+    }
+    #quote7 span {
+        font-size: 64px;
+        line-height: 20px;
+    }
+    /*    ROXANE GAY */
+    #quote8 {
+        font-size: 40px;
+    }
+    #quote8 span:nth-child(2) {
+        letter-spacing: 5px;
+    }
+    #quote8 span:nth-child(3) {
+        letter-spacing: 10px;
+    }
+    #quote8 span:nth-child(4) {
+        letter-spacing: 15px;
+    }
+    #quote8 span:nth-child(5) {
+        letter-spacing: 30px;
+    }
+    /*    AVA DUVERNAY */
+    #quote9 {
+        font-size: 40px;
+    }
+    #quote9 span {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    #quote9 span.quotation {
+        line-height: 40px;
+    }
+    /*    GRACE LEE BOGGS */
+    #quote10 {
+        font-size: 40px;
+    }
+    #quote10 span {
+        font-size: 60px;
+    }
+    /*    DOLORES HUERTA */
+    #quote11 {
+        font-size: 40px;
+    }
+    #quote11 span {
+        font-size: 45px;
+    }
+    /*    YURI KOCHIYAMA */
+    #quote12 {
+        font-size: 40px;
+    }
+    /*    ALICIA GARZA */
+    #quote13 {
+        font-size: 40px;
+    }
+    #quote13 span {
+        font-size: 92px;
+        line-height: 92px;
+    }
+    #quote13 span:not(.quotation) {
+        margin-left: 60px;
+    }
+    /*    AI-JEN POO */
+    #quote14 {
+        font-size: 40px;
+    }
+    /*    THENMOZHI SOUNDARARAJAN */
+    #quote15 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+    #quote15 span {
+        font-size: 40px;
+    }
+    /*    PRAMILA JAYAPAL */
+    #quote16,
+    #quote16 span {
+        font-size: 40px;
+        line-height: auto;
     }
 }
