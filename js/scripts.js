@@ -24,13 +24,17 @@ $(window).bind('mousewheel', (event, delta) => {
     if (name && name.is('h3')) {
         const nameBottom = name.offset().top + name.height();
         const quoteTop = $('.open .quote').offset().top;
-        if (quoteTop < nameBottom) {
-            name.addClass('overlappingName');
+        const bio = $('.open .bio');
+        const bioBottom = bio.offset().top + bio.outerHeight();
+        if (bioBottom < nameBottom) {
+            name.css('color', 'rgba(255,255,255,0)');
+        } else if (quoteTop < nameBottom) {
+            name.css('color', 'rgba(255,255,255,0.5)');
         } else {
-            name.removeClass('overlappingName');
+            name.css('color', 'rgba(255,255,255,1.0)');
         }
     }
-    
+
 });
 
 function updateSection(direction) {
