@@ -44,10 +44,10 @@ function openModal() {
 }
 
 function closeModal(e) {
+    $('body').css('overflow', 'visible');
     e && e.stopPropagation();
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');
     $('.open').removeClass('open');
-    $('body').css('overflow', 'visible');
 }
