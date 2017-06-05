@@ -34,6 +34,9 @@
     h4 {
         font-family: 'Raleway', sans-serif;
     }
+    a {
+        text-decoration: underline;
+    }
     /*    HEADER */
     .title {
         background-color: var(--blue);
@@ -142,50 +145,99 @@
     .grid_view_yellow .container_effects3 {
         background-color: rgba(229, 166, 0, 1.0);
     }
-    .bio_yellow {
+    .bio_yellow,
+    .bio_yellow a {
         color: rgba(229, 166, 0, 1.0);
+    }
+    .bio_yellow a {
+        box-shadow: inset 0 0 0 0 var(--yellow);
+    }
+    .bio_yellow a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--yellow);
     }
     /*    GREEN */
     .grid_view_green .container_effects3 {
         background-color: rgba(114, 204, 167, 1.0);
     }
-    .bio_green {
+    .bio_green,
+    .bio_green a {
         color: rgba(114, 204, 167, 1.0);
+    }
+    .bio_green a {
+        box-shadow: inset 0 0 0 0 var(--green);
+    }
+    .bio_green a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--green);
     }
     /*    RED */
     .grid_view_red .container_effects3 {
         background-color: rgba(255, 42, 72, 1.0);
     }
-    .bio_red {
+    .bio_red,
+    .bio_red a {
         color: rgba(255, 42, 72, 1.0);
+    }
+    .bio_red a {
+        box-shadow: inset 0 0 0 0 var(--red);
+    }
+    .bio_red a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--red);
     }
     /*    ORANGE */
     .grid_view_orange .container_effects3 {
         background-color: rgba(255, 137, 71, 1.0);
     }
-    .bio_orange {
+    .bio_orange,
+    .bio_orange a {
         color: rgba(255, 137, 71, 1.0);
+    }
+    .bio_orange a {
+        box-shadow: inset 0 0 0 0 var(--orange);
+    }
+    .bio_orange a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--orange);
     }
     /*    TEAL */
     .grid_view_teal .container_effects3 {
         background-color: rgba(16, 162, 150, 1.0);
     }
-    .bio_teal {
+    .bio_teal,
+    .bio_teal a {
         color: rgba(16, 162, 150, 1.0);
+    }
+    .bio_teal a {
+        box-shadow: inset 0 0 0 0 var(--teal);
+    }
+    .bio_teal a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--teal);
     }
     /*    PURPLE */
     .grid_view_purple .container_effects3 {
         background-color: rgba(115, 84, 232, 1.0);
     }
-    .bio_purple {
+    .bio_purple,
+    .bio_purple a {
         color: rgba(115, 84, 232, 1.0);
+    }
+    .bio_purple a {
+        box-shadow: inset 0 0 0 0 var(--purple);
+    }
+    .bio_purple a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--purple);
     }
     /*    PINK */
     .grid_view_pink .container_effects3 {
         background-color: rgba(255, 105, 166, 1.0);
     }
-    .bio_pink {
+    .bio_pink,
+    .bio_pink a {
         color: rgba(255, 105, 166, 1.0);
+    }
+    .bio_pink a {
+        box-shadow: inset 0 0 0 0 var(--pink);
+    }
+    .bio_pink a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--pink);
     }
     .container_effects3:hover,
     .container_effects3.modal_effect {
@@ -287,7 +339,6 @@
     .profile {
         width: 100%;
         max-width: 1800px;
-        /*            height: 100%;*/
         transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
         -ms-transition: all 0.25s ease;
@@ -304,6 +355,16 @@
         font-weight: 700;
         padding: 20px;
         background-color: white;
+    }
+    .bio a {
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+    }
+    .bio a:hover {
+        color: white;
     }
     /*    ADDITIONAL QUOTES */
     .additional_quotes_section {
