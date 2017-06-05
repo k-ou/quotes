@@ -543,6 +543,10 @@
     .container_effects3.modal_effect {
         border: 20px white solid;
     }
+    /*    exception for Thenmozhi Soundararajan */
+    .grid15 .container_effects3 h3.name {
+        font-size: 40px;
+    }
     /*    BIO */
     .bio {
         padding: 40px;
