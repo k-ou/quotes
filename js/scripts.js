@@ -19,6 +19,20 @@ $(document).keyup(e => {
     }
 });
 
+$(window).bind('mousewheel', (event, delta) => {
+    const name = $('.open .name');
+    if (name && name.is('h3')) {
+        const nameBottom = name.offset().top + name.height();
+        const quoteTop = $('.open .quote').offset().top;
+        if (quoteTop < nameBottom) {
+            name.addClass('overlappingName');
+        } else {
+            name.removeClass('overlappingName');
+        }
+    }
+    
+});
+
 function updateSection(direction) {
     const nextSection = $('.open').parent()[direction]().children();
     closeModal.bind($('.open'))()
@@ -46,6 +60,8 @@ function openModal() {
 function closeModal(e) {
     $('body').css('overflow', 'visible');
     e && e.stopPropagation();
+    const name = $('.open .name');
+    name.removeClass('overlappingName')
     unstyleModal();
     $('.open').find('.overlay').removeClass('show_overlay');
     $('.open').find('.profile_background').removeClass('quote_expand');

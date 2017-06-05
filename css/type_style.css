@@ -336,8 +336,8 @@
         margin-bottom: 200px;
         background-color: white;
     }
-    .changeColor {
-        background-color: green;
+    .overlappingName {
+        background-color: black;
     }
 }
 
