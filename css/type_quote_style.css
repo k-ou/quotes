@@ -54,12 +54,16 @@
         font-family: 'Fascinate Inline', sans-serif;
     }
     #quote5 {
-        font-family: 'Cutive Mono', sans-serif;
+        font-family: 'Glegoo', sans-serif;
     }
     .grid5 .i_am,
     .grid5 .name,
     #quote5 span {
-        font-family: 'Glegoo', sans-serif;
+        font-family: 'Lalezar', sans-serif;
+    }
+    #quote5 span {
+        font-size: 60px;
+        line-height: 60px;
     }
     #quote6 {
         /*        font-family: 'Comfortaa', sans-serif;*/
@@ -85,7 +89,7 @@
     .grid7 .i_am,
     .grid7 .name,
     #quote7 span {
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: 'Kameron', sans-serif;
     }
     #quote8 {
         font-family: 'Questrial', sans-serif;
@@ -113,10 +117,17 @@
     .grid9 .i_am,
     .grid9 .name,
     #quote9 span {
-        font-family: 'Monoton', sans-serif;
+        font-family: 'Shrikhand', sans-serif;
+    }
+    #quote9 span {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    #quote9 span.quotation {
+        line-height: 40px;
     }
     #quote10 {
-        font-family: 'IM Fell DW Pica', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     .grid10 .i_am,
     .grid10 .name,
@@ -127,12 +138,17 @@
         font-size: 60px;
     }
     #quote11 {
-        font-family: 'Crimson Text', sans-serif;
+        font-family: 'Cormorant Garamond', sans-serif;
+        font-weight: 300;
+        /*        font-size: 30px;*/
     }
     .grid11 .i_am,
     .grid11 .name,
     #quote11 span {
         font-family: 'IM Fell DW Pica', sans-serif;
+    }
+    #quote11 span {
+        font-size: 45px;
     }
     #quote12 {
         font-family: 'Abel', sans-serif;
