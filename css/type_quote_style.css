@@ -29,12 +29,17 @@
     }
     /*    ANGELA DAVIS */
     #quote2 {
-        font-family: 'Special Elite', sans-serif;
+        font-family: 'Jura', sans-serif;
+        font-size: 5.5vw;
     }
     .grid2 .i_am,
     .grid2 .name,
     #quote2 span {
-        /*        font-family: 'Suez One', sans-serif;*/
+        font-family: 'Special Elite', sans-serif;
+    }
+    #quote2 span {
+        font-size: 7.5vw;
+        line-height: 34px;
     }
     /*    AUDRE LORDE */
     #quote3 {
@@ -90,7 +95,7 @@
         font-size: 5vw;
     }
     #quote7 span.quotation {
-        font-size: 48px;
+        font-size: 8.5vw;
         text-align: center;
         line-height: 20px;
     }
@@ -250,6 +255,14 @@
     #quote1 span {
         line-height: 38px;
     }
+    /*    ANGELA DAVIS */
+    #quote2 {
+        font-size: 2.75vw;
+    }
+    #quote2 span {
+        font-size: 4vw;
+        line-height: 44px;
+    }
     /*    AUDRE LORDE */
     #quote3 {
         font-size: 3vw;
@@ -277,8 +290,9 @@
     #quote7 {
         font-size: 3vw;
     }
-    #quote7 span {
-        line-height: 20px;
+    #quote7 span.quotation {
+        font-size: 6vw;
+        line-height: 30px;
     }
     #quote7 span:not(.quotation) {
         font-size: 7vw;
@@ -363,6 +377,14 @@
     }
     #quote1 span {
         line-height: 38px;
+    }
+    /*    ANGELA DAVIS */
+    #quote2 {
+        font-size: 30px;
+    }
+    #quote2 span {
+        font-size: 54px;
+        line-height: 60px;
     }
     /*    AUDRE LORDE */
     #quote3 {
