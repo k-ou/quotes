@@ -1,0 +1,314 @@
+body {
+    --blue: #2E3444;
+    /*    rgb(46,52,68)*/
+    --red: #FF2A48;
+    /*    rgb(255,42,72)*/
+    --green: #72CCA7;
+    /*    rgb(114,204,167)*/
+    --teal: #10A296;
+    /*    rgb(16,162,150)*/
+    --yellow: #E5A600;
+    /*    rgb(229,166,0)*/
+    --orange: #FF8947;
+    /*    rgb(255,137,71)*/
+    --purple: #7354E8;
+    /*    rgb(115,84,232)*/
+    --pink: #FF69A6;
+    /*    rgb(255,105,166)*/
+}
+
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.title_i_am {
+    height: 250px;
+    background-color: rgba(46, 52, 68, 0.7);
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_i_am h2 {
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.container_effects3 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 166, 0, 1.0);
+    border: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.grid_view_yellow .container_effects3 {
+    background-color: rgba(229, 166, 0, 1.0);
+}
+
+.grid_view_yellow .container_effects3:hover,
+.grid_view_yellow .modal_effect {
+    background-color: rgba(229, 166, 0, 0.6);
+}
+
+.grid_view_green .container_effects3 {
+    background-color: rgba(114, 204, 167, 1.0);
+}
+
+.grid_view_green .container_effects3:hover,
+.grid_view_green .modal_effect {
+    background-color: rgba(114, 204, 167, 0.6);
+}
+
+.grid_view_red .container_effects3 {
+    background-color: rgba(255, 42, 72, 1.0);
+}
+
+.grid_view_red .container_effects3:hover,
+.grid_view_red .modal_effect {
+    background-color: rgba(255, 42, 72, 0.6);
+}
+
+.grid_view_orange .container_effects3 {
+    background-color: rgba(255, 137, 71, 1.0);
+}
+
+.grid_view_orange .container_effects3:hover,
+.grid_view_orange .modal_effect {
+    background-color: rgba(255, 137, 71, 0.6);
+}
+
+.grid_view_teal .container_effects3 {
+    background-color: rgba(16, 162, 150, 1.0);
+}
+
+.grid_view_teal .container_effects3:hover,
+.grid_view_teal .modal_effect {
+    background-color: rgba(16, 162, 150, 0.6);
+}
+
+.grid_view_purple .container_effects3 {
+    background-color: rgba(115, 84, 232, 1.0);
+}
+
+.grid_view_purple .container_effects3:hover,
+.grid_view_purple .modal_effect {
+    background-color: rgba(115, 84, 232, 0.6);
+}
+
+.grid_view_pink .container_effects3 {
+    background-color: rgba(255, 105, 166, 1.0);
+}
+
+.grid_view_pink .container_effects3:hover,
+.grid_view_pink .modal_effect {
+    background-color: rgba(255, 105, 166, 0.6);
+}
+
+.container_effects3:hover,
+.container_effects3.modal_effect {
+    border: 20px white solid;
+}
+
+p.quote {
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+p.quote span {
+    font-weight: bold;
+}
+
+.container_effects3 h3.i_am {
+    opacity: 1;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.container_effects3 h3.name {
+    position: absolute;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.container_effects3:hover h3.name,
+.container_effects3.modal_effect h3.name {
+    opacity: 1;
+}
+
+.container_effects3:hover h3.i_am,
+.container_effects3.modal_effect h3.i_am {
+    opacity: 0;
+}
+
+.modal_effect {
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+
+/* GRID LOW-RES */
+
+#ericka_hart {
+    background-image: url("../img/sm/ericka1.jpg");
+}
+
+#angela_davis {
+    background-image: url("../img/sm/angela1.jpg");
+}
+
+#audre_lorde {
+    background-image: url("../img/sm/audre1.jpg");
+}
+
+#cherrie_moraga {
+    background-image: url("../img/sm/cherrie.jpg");
+}
+
+#janet_mock {
+    background-image: url("../img/sm/janet2.jpg");
+}
+
+#michelle_alexander {
+    background-image: url("../img/sm/michelle2.jpg");
+}
+
+#carmen_perez {
+    background-image: url("../img/sm/carmen1.jpeg");
+}
+
+#winona_laduke {
+    background-image: url("../img/sm/winona1.JPG");
+}
+
+#roxane_gay {
+    background-image: url("../img/sm/roxane3.jpg");
+}
+
+#ava_duvernay {
+    background-image: url("../img/sm/ava4.jpg");
+}
+
+#grace_lee_boggs {
+    background-image: url("../img/sm/grace2.jpg");
+}
+
+#dolores_huerta {
+    background-image: url("../img/sm/dolores1.jpg");
+}
+
+#yuri_kochiyama {
+    background-image: url("../img/sm/yuri1.jpg");
+}
+
+#alicia_garza {
+    background-image: url("../img/sm/alicia2.jpg");
+}
+
+#ai-jen_poo {
+    background-image: url("../img/sm/ai-jen4.jpg");
+}
+
+#thenmozhi_soundararajan {
+    background-image: url("../img/sm/thenmozhi1.jpg");
+}
+
+#pramila_jayapal {
+    background-image: url("../img/sm/pramila3.jpeg");
+}
+
+
+/* MODAL HIGH-RES */
+
+.open #ericka_hart {
+    background-image: url("../img/ericka1.jpg");
+}
+
+.open #angela_davis {
+    background-image: url("../img/angela1.jpg");
+}
+
+.open #audre_lorde {
+    background-image: url("../img/audre1.jpg");
+}
+
+.open #cherrie_moraga {
+    background-image: url("../img/cherrie.jpg");
+}
+
+.open #janet_mock {
+    background-image: url("../img/janet2.jpg");
+}
+
+.open #michelle_alexander {
+    background-image: url("../img/michelle2.jpg");
+}
+
+.open #carmen_perez {
+    background-image: url("../img/carmen1.jpeg");
+}
+
+.open #winona_laduke {
+    background-image: url("../img/winona1.JPG");
+}
+
+.open #roxane_gay {
+    background-image: url("../img/roxane3.jpg");
+}
+
+.open #ava_duvernay {
+    background-image: url("../img/ava4.jpg");
+}
+
+.open #grace_lee_boggs {
+    background-image: url("../img/grace2.jpg");
+}
+
+.open #dolores_huerta {
+    background-image: url("../img/dolores1.jpg");
+}
+
+.open #yuri_kochiyama {
+    background-image: url("../img/yuri1.jpg");
+}
+
+.open #alicia_garza {
+    background-image: url("../img/alicia2.jpg");
+}
+
+.open #ai-jen_poo {
+    background-image: url("../img/ai-jen4.jpg");
+}
+
+.open #thenmozhi_soundararajan {
+    background-image: url("../img/thenmozhi1.jpg");
+}
+
+.open #pramila_jayapal {
+    background-image: url("../img/pramila3.jpeg");
+}
