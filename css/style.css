@@ -345,7 +345,7 @@
     }
     .profile {
         width: 100%;
-        max-width: 1800px;
+        max-width: 1250px;
         transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
         -ms-transition: all 0.25s ease;
@@ -587,5 +587,18 @@
     /*    adds space to bottom of modal */
     .profile>div:last-child {
         margin-bottom: 100px;
+    }
+}
+
+
+/* Large screens */
+
+@media only screen and (min-width: 1800px) {
+    .profile_background {
+        height: 500px;
+    }
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        font-size: 60px;
     }
 }
