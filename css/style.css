@@ -1,426 +1,591 @@
-body {
-    --blue: #2E3444;
-    /*    rgb(46,52,68)*/
-    --red: #FF2A48;
-    /*    rgb(255,42,72)*/
-    --green: #72CCA7;
-    /*    rgb(114,204,167)*/
-    --teal: #10A296;
-    /*    rgb(16,162,150)*/
-    --yellow: #E5A600;
-    /*    rgb(229,166,0)*/
-    --orange: #FF8947;
-    /*    rgb(255,137,71)*/
-    --purple: #7354E8;
-    /*    rgb(115,84,232)*/
-    --pink: #FF69A6;
-    /*    rgb(255,105,166)*/
+/* Mobile screens */
+
+@media only screen and (min-width: 320px) {
+    body {
+        --blue: #2E3444;
+        /*    rgb(46,52,68)*/
+        --red: #FF2A48;
+        /*    rgb(255,42,72)*/
+        --green: #72CCA7;
+        /*    rgb(114,204,167)*/
+        --teal: #10A296;
+        /*    rgb(16,162,150)*/
+        --yellow: #E5A600;
+        /*    rgb(229,166,0)*/
+        --orange: #FF8947;
+        /*    rgb(255,137,71)*/
+        --purple: #7354E8;
+        /*    rgb(115,84,232)*/
+        --pink: #FF69A6;
+        /*    rgb(255,105,166)*/
+    }
+    .no-gutter>[class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    [class*='grid_view_'] {
+        position: relative;
+        z-index: 5;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Raleway', sans-serif;
+    }
+    a {
+        text-decoration: underline;
+    }
+    /*    HEADER */
+    .title {
+        background-color: var(--blue);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_text {
+        text-align: center;
+    }
+    .title h1 {
+        font-size: 12vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
+        color: white;
+    }
+    .title h2 {
+        font-size: 15vw;
+        font-family: 'Mrs Sheppards', sans-serif;
+        color: var(--red);
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50%;
+        left: 0;
+        right: 0;
+    }
+    /*    "I AM" */
+    .title_i_am {
+        height: 250px;
+        background-color: rgba(46, 52, 68, 0.7);
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_i_am h2 {
+        font-size: 20vw;
+        font-weight: 600;
+    }
+    /*    GRIDS */
+    section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        top: 0;
+        left: 0;
+    }
+    section.open {
+        z-index: 100;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    }
+    .profile_background {
+        width: 100%;
+        height: 400px;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .quote_expand {
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    /* Effect 3 */
+    .profile_background,
+    .container_effects3,
+    .container_effects3 h3 {
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .container_effects3 {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+    /*    YELLOW */
+    .grid_view_yellow .container_effects3 {
+        background-color: rgba(229, 166, 0, 1.0);
+    }
+    .bio_yellow,
+    .bio_yellow a {
+        color: rgba(229, 166, 0, 1.0);
+    }
+    .bio_yellow a {
+        box-shadow: inset 0 0 0 0 var(--yellow);
+    }
+    .bio_yellow a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--yellow);
+    }
+    /*    GREEN */
+    .grid_view_green .container_effects3 {
+        background-color: rgba(114, 204, 167, 1.0);
+    }
+    .bio_green,
+    .bio_green a {
+        color: rgba(114, 204, 167, 1.0);
+    }
+    .bio_green a {
+        box-shadow: inset 0 0 0 0 var(--green);
+    }
+    .bio_green a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--green);
+    }
+    /*    RED */
+    .grid_view_red .container_effects3 {
+        background-color: rgba(255, 42, 72, 1.0);
+    }
+    .bio_red,
+    .bio_red a {
+        color: rgba(255, 42, 72, 1.0);
+    }
+    .bio_red a {
+        box-shadow: inset 0 0 0 0 var(--red);
+    }
+    .bio_red a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--red);
+    }
+    /*    ORANGE */
+    .grid_view_orange .container_effects3 {
+        background-color: rgba(255, 137, 71, 1.0);
+    }
+    .bio_orange,
+    .bio_orange a {
+        color: rgba(255, 137, 71, 1.0);
+    }
+    .bio_orange a {
+        box-shadow: inset 0 0 0 0 var(--orange);
+    }
+    .bio_orange a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--orange);
+    }
+    /*    TEAL */
+    .grid_view_teal .container_effects3 {
+        background-color: rgba(16, 162, 150, 1.0);
+    }
+    .bio_teal,
+    .bio_teal a {
+        color: rgba(16, 162, 150, 1.0);
+    }
+    .bio_teal a {
+        box-shadow: inset 0 0 0 0 var(--teal);
+    }
+    .bio_teal a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--teal);
+    }
+    /*    PURPLE */
+    .grid_view_purple .container_effects3 {
+        background-color: rgba(115, 84, 232, 1.0);
+    }
+    .bio_purple,
+    .bio_purple a {
+        color: rgba(115, 84, 232, 1.0);
+    }
+    .bio_purple a {
+        box-shadow: inset 0 0 0 0 var(--purple);
+    }
+    .bio_purple a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--purple);
+    }
+    /*    PINK */
+    .grid_view_pink .container_effects3 {
+        background-color: rgba(255, 105, 166, 1.0);
+    }
+    .bio_pink,
+    .bio_pink a {
+        color: rgba(255, 105, 166, 1.0);
+    }
+    .bio_pink a {
+        box-shadow: inset 0 0 0 0 var(--pink);
+    }
+    .bio_pink a:hover {
+        box-shadow: inset 0 -100px 0 0 var(--pink);
+    }
+    .container_effects3:hover,
+    .container_effects3.modal_effect {
+        border: 8px white solid;
+    }
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container_effects3 h3.i_am {
+        opacity: 1;
+    }
+    .container_effects3 h3.name {
+        position: absolute;
+        opacity: 0;
+        margin: 0 auto;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .open .container_effects3 h3.name {
+        top: auto;
+    }
+    .container_effects3:hover h3.name,
+    .container_effects3.modal_effect h3.name {
+        opacity: 1;
+    }
+    .container_effects3:hover h3.i_am,
+    .container_effects3.modal_effect h3.i_am {
+        opacity: 0;
+    }
+    .modal_effect {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        align-items: flex-start;
+        padding-top: 80px;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .overlay {
+        /*    opacity: 0;*/
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        z-index: 999;
+        /*    pointer-events: none;*/
+        cursor: default;
+        padding: 25px;
+        padding-top: 200px;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .show_overlay {
+        /*    opacity: 1;*/
+        display: flex;
+        justify-content: center;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 1em;
+        height: 1em;
+        text-indent: -9000px;
+        cursor: pointer;
+        z-index: 1000;
+        color: white;
+        opacity: 1;
+    }
+    .close:before {
+        content: 'x';
+        color: white;
+        font-weight: 300;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+        line-height: 0.6;
+        text-align: center;
+        text-indent: 0px;
+    }
+    .profile {
+        width: 100%;
+        max-width: 1800px;
+        transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+    }
+    .quote {
+        padding-bottom: 50px;
+    }
+    small.font_credit {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+    }
+    /*    BIO */
+    .bio {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 20px;
+        background-color: white;
+    }
+    .bio a {
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+    }
+    .bio a:hover {
+        color: white;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section {
+        color: white;
+    }
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote {
+        position: relative;
+        width: 100%;
+    }
+    .additional_quote:after {
+        content: "";
+        display: block;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 50%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 65%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 80%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 95%;
+    }
+    .additional_quote_center {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .additional_quote p {
+        font-size: 16px;
+    }
+    /*    adds space to bottom of modal */
+    .profile div:last-child {
+        margin-bottom: 30px;
+    }
 }
 
-.no-gutter>[class*='col-'] {
-    padding-right: 0;
-    padding-left: 0;
-}
 
-p,
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Raleway', sans-serif;
-}
+/* Tablet screens (small) */
 
-.title {
-    background-color: var(--blue);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title_text {
-    text-align: center;
-}
-
-.title h1 {
-    font-size: 10vw;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    color: white;
-}
-
-.title h2 {
-    font-size: 15vw;
-    font-family: 'Mrs Sheppards', sans-serif;
-    color: var(--red);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    left: 0;
-    right: 0;
-}
-
-.title_i_am {
-    height: 250px;
-    background-color: rgba(46, 52, 68, 0.7);
-    color: white;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title_i_am h2 {
-    font-size: 100px;
-    font-weight: 600;
-}
-
-section {
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
-
-section.open {
-    z-index: 100;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-}
-
-.profile_background {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-}
-
-.quote_expand {
-    height: 100vh;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
+@media only screen and (min-width: 768px) {
+    /*    "I AM" */
+    .title_i_am h2 {
+        font-size: 10vw;
+    }
+    .modal_effect {
+        padding-top: 70px;
+    }
+    .overlay {
+        padding: 80px;
+        padding-top: 210px;
+    }
+    .close {
+        top: 1.5em;
+        right: 1.5em;
+        width: 2em;
+        height: 2em;
+    }
+    .close:before {
+        font-size: 3em;
+        line-height: 0.6;
+    }
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        font-size: 35px;
+    }
+    .container_effects3:hover,
+    .container_effects3.modal_effect {
+        border: 20px white solid;
+    }
+    .quote {
+        padding-bottom: 90px;
+    }
+    /*    BIO */
+    .bio {
+        font-size: 18px;
+        padding: 30px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 100%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 170%;
+    }
+    .additional_quote_center {
+        padding: 30px;
+    }
+    .additional_quote p {
+        font-size: 18px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
+        margin-bottom: 100px;
+    }
 }
 
 
-/* experimenting with different effects */
+/* Tablet screens (large) */
 
-
-/* NUMBER 1 */
-
-.profile_background,
-.container_effects1,
-.container_effects1 h3 {
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-}
-
-.container_effects1 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(16, 162, 150, 0.6);
-    border: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-}
-
-.container_effects1:hover {
-    border: 20px white solid;
-}
-
-.container_effects1 h3 {
-    opacity: 0;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-
-.container_effects1:hover h3 {
-    opacity: 1;
+@media only screen and (min-width: 1024px) {
+    .container_effects3 h3.i_am,
+    .container_effects3 h3.name {
+        font-size: 40px;
+    }
+    /*    exception for Thenmozhi Soundararajan */
+    .grid15 .container_effects3 h3.name {
+        font-size: 30px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quote_xs:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 175%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 200%;
+    }
+    .additional_quote_center {
+        padding: 30px;
+    }
+    .additional_quote p {
+        font-size: 18px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
+        margin-bottom: 100px;
+    }
 }
 
 
-/* NUMBER 3 */
+/* Desktop screens */
 
-.profile_background,
-.container_effects3,
-.container_effects3 h3 {
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-}
-
-.container_effects3 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(229, 166, 0, 1.0);
-    border: 0px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-}
-
-.grid_view_yellow .container_effects3 {
-    background-color: rgba(229, 166, 0, 1.0);
-}
-
-.grid_view_yellow .container_effects3:hover,
-.grid_view_yellow .modal_effect {
-    background-color: rgba(229, 166, 0, 0.6);
-}
-
-.grid_view_green .container_effects3 {
-    background-color: rgba(114, 204, 167, 1.0);
-}
-
-.grid_view_green .container_effects3:hover,
-.grid_view_green .modal_effect {
-    background-color: rgba(114, 204, 167, 0.6);
-}
-
-.grid_view_red .container_effects3 {
-    background-color: rgba(255, 42, 72, 1.0);
-}
-
-.grid_view_red .container_effects3:hover,
-.grid_view_red .modal_effect {
-    background-color: rgba(255, 42, 72, 0.6);
-}
-
-.grid_view_orange .container_effects3 {
-    background-color: rgba(255, 137, 71, 1.0);
-}
-
-.grid_view_orange .container_effects3:hover,
-.grid_view_orange .modal_effect {
-    background-color: rgba(255, 137, 71, 0.6);
-}
-
-.grid_view_teal .container_effects3 {
-    background-color: rgba(16, 162, 150, 1.0);
-}
-
-.grid_view_teal .container_effects3:hover,
-.grid_view_teal .modal_effect {
-    background-color: rgba(16, 162, 150, 0.6);
-}
-
-.grid_view_purple .container_effects3 {
-    background-color: rgba(115, 84, 232, 1.0);
-}
-
-.grid_view_purple .container_effects3:hover,
-.grid_view_purple .modal_effect {
-    background-color: rgba(115, 84, 232, 0.6);
-}
-
-.grid_view_pink .container_effects3 {
-    background-color: rgba(255, 105, 166, 1.0);
-}
-
-.grid_view_pink .container_effects3:hover,
-.grid_view_pink .modal_effect {
-    background-color: rgba(255, 105, 166, 0.6);
-}
-
-.container_effects3:hover,
-.container_effects3.modal_effect {
-    border: 20px white solid;
-}
-
-.container_effects3 h3.i_am {
-    opacity: 1;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    text-transform: uppercase;
-}
-
-.container_effects3 h3.name {
-    position: absolute;
-    opacity: 0;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 48px;
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-
-.container_effects3:hover h3.name,
-.container_effects3.modal_effect h3.name {
-    opacity: 1;
-}
-
-.container_effects3:hover h3.i_am,
-.container_effects3.modal_effect h3.i_am {
-    opacity: 0;
-}
-
-.modal_effect {
-    align-items: flex-start;
-    padding-top: 50px;
-}
-
-
-/* END EXPERIMENTATION */
-
-#ericka_hart {
-    background-image: url("../img/ericka1.jpg");
-}
-
-#angela_davis {
-    background-image: url("../img/angela1.jpg");
-}
-
-#audre_lorde {
-    background-image: url("../img/audre1.jpg");
-}
-
-#cherrie_moraga {
-    background-image: url("../img/cherrie.jpg");
-}
-
-#janet_mock {
-    background-image: url("../img/janet2.jpg");
-}
-
-#michelle_alexander {
-    background-image: url("../img/michelle2.jpg");
-}
-
-#carmen_perez {
-    background-image: url("../img/carmen1.jpeg");
-}
-
-#winona_laduke {
-    background-image: url("../img/winona1.JPG");
-}
-
-#roxane_gay {
-    background-image: url("../img/roxane3.jpg");
-}
-
-#ava_duvernay {
-    background-image: url("../img/ava4.jpg");
-}
-
-#grace_lee_boggs {
-    background-image: url("../img/grace2.jpg");
-}
-
-#dolores_huerta {
-    background-image: url("../img/dolores1.jpg");
-}
-
-#yuri_kochiyama {
-    background-image: url("../img/yuri1.jpg");
-}
-
-#alicia_garza {
-    background-image: url("../img/alicia2.jpg");
-}
-
-#ai-jen_poo {
-    background-image: url("../img/al-jen4.jpg");
-}
-
-#thenmozhi_soundararajan {
-    background-image: url("../img/thenmozhi1.jpg");
-}
-
-.overlay {
-    opacity: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    z-index: 999;
-    pointer-events: none;
-    cursor: default;
-    padding: 100px;
-    padding-top: 200px;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-}
-
-.show_overlay {
-    opacity: 1;
-}
-
-.close {
-    position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-    width: 2em;
-    height: 2em;
-    text-indent: -9000px;
-    cursor: pointer;
-    z-index: 1000;
-    color: white;
-    opacity: 1;
-}
-
-.close:before {
-    content: 'x';
-    font-weight: 300;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 3em;
-    line-height: 0.6;
-    text-align: center;
-    text-indent: 0px;
-}
-
-.profile {
-    width: 100%;
-    height: 100%;
-}
-
-.quote {
-    font-size: 36px;
-    color: white;
+@media only screen and (min-width: 1224px) {
+    /*    HEADER */
+    .title h1 {
+        font-size: 10vw;
+    }
+    .title h2 {
+        font-size: 15vw;
+    }
+    /*    "I AM" */
+    .title_i_am h2 {
+        font-size: 100px;
+    }
+    .overlay {
+        padding: 150px;
+        padding-top: 200px;
+    }
+    .container_effects3:hover,
+    .container_effects3.modal_effect {
+        border: 20px white solid;
+    }
+    /*    exception for Thenmozhi Soundararajan */
+    .grid15 .container_effects3 h3.name {
+        font-size: 40px;
+    }
+    /*    BIO */
+    .bio {
+        padding: 40px;
+    }
+    /*    ADDITIONAL QUOTES */
+    .additional_quotes_section h2 {
+        margin: 60px 0px 40px;
+    }
+    .additional_quote {
+        border: 3px white solid;
+    }
+    .additional_quote_xs:after {
+        padding-bottom: 75%;
+    }
+    .additional_quote_sm:after {
+        padding-bottom: 100%;
+    }
+    .additional_quote_md:after {
+        padding-bottom: 125%;
+    }
+    .additional_quote_lg:after {
+        padding-bottom: 150%;
+    }
+    .additional_quote_center {
+        padding: 40px;
+    }
+    /*    adds space to bottom of modal */
+    .profile>div:last-child {
+        margin-bottom: 100px;
+    }
 }
