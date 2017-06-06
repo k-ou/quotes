@@ -355,6 +355,10 @@
     .quote {
         padding-bottom: 50px;
     }
+    small.font_credit {
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+    }
     /*    BIO */
     .bio {
         font-family: 'Raleway', sans-serif;

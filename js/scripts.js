@@ -57,12 +57,12 @@ function openModal() {
     $(this).addClass('open');
     $(this).find('.overlay').addClass('show_overlay');
     $(this).find('.profile_background').addClass('quote_expand');
-    $('body').css('overflow', 'hidden');
+    $('.container-fluid').css('overflow', 'hidden');
     styleModal();
 }
 
 function closeModal(e) {
-    $('body').css('overflow', 'visible');
+    $('.container-fluid').css('overflow', 'visible');
     e && e.stopPropagation();
     const name = $('.open .name');
     name.removeClass('overlappingName')
