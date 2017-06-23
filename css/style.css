@@ -265,6 +265,7 @@
     }
     .open .container_effects3 h3.name {
         top: auto;
+        margin-top: 40px;
     }
     .container_effects3:hover h3.name,
     .container_effects3.modal_effect h3.name {
